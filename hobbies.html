@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AdarnaSite</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@200..800&family=Instrument+Serif:ital@0;1&family=Lemon&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Lemon&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">  
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Dosis:wght@200..800&family=Instrument+Serif:ital@0;1&family=Lemon&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="images/logo.svg">
+    <style>
+        .card {
+       background:#add8e6;}
+    </style>
+</head>
+<body>
+    <div class="hero">
+        <video autoplay loop muted class="back-video">
+             <source src="images/glowingbgcopy.mp4" type="video/mp4">
+        </video>
+    </div>
+    <nav>
+        <div class="menu-toggle">
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+        </div>
+        <ul>
+            <li id="nav1"><a href="index.html">AdarnaSite</a></li>
+            <li id="nav2"><a href="hobbies.html">Hobbies</a></li>
+            <li id="nav3"><a href="contacts.html">Socials</a></li>
+            <li id="nav4"><a href="gallery.html">Gallery</a></li>
+        </ul>
+    </nav>
+    <div class="card-container">
+        <div class="card">
+             <img src="images/guitarhobby.jpg" alt="guitar">
+             <div class="card-content">
+                <h3>Guitar</h3>
+                <p>
+                    From a young age, my passion for playing the guitar has been a steadfast and enduring love, weaving melodies and chords into the fabric of my life.</p>
+                <a href="#" class="btn">To play the Guitar🎸</a>
+             </div>
+        </div>
+
+        <div class="card">
+            <img src="images/bballhobby.jpg" alt="bball">
+            <div class="card-content">
+               <h3>Basketball</h3>
+               <p>Since my early years, my love for playing basketball has been an enduring and exhilarating journey, where the rhythmic bounce of the ball echoes the heartbeat of my athletic passion.</p>
+               <a href="#" class="btn">To play Basketball🏀</a>
+            </div>
+       </div>
+
+       <div class="card">
+        <img src="images/pianohobby.jpg" alt="piano">
+        <div class="card-content">
+           <h3>Piano</h3>
+           <p>
+            Having recently embraced the piano, I quickly developed a deep affection for the instrument, drawn to its mesmerizing tunes and the sheer delight it brought into my life through the art of music.</p>
+           <a href="#" class="btn">To play the Piano🎹</a>
+        </div>
+   </div>
+   
+    </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            var mobileMenu = document.querySelector('nav ul');
+            var menuToggle = document.querySelector('.menu-toggle');
+
+            menuToggle.addEventListener('click', function() {
+                mobileMenu.classList.toggle('show');
+            });
+
+            // Close the mobile menu when a link is clicked
+            mobileMenu.addEventListener('click', function() {
+                mobileMenu.classList.remove('show');
+            });
+        });
+    </script>
+</body>
+</html>

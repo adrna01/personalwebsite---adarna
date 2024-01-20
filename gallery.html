@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AdarnaSite</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@200..800&family=Instrument+Serif:ital@0;1&family=Lemon&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Lemon&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">  
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Dosis:wght@200..800&family=Instrument+Serif:ital@0;1&family=Lemon&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="images/logo.svg">
+</head>
+<body>
+    <div class="hero">
+        <video autoplay loop muted class="back-video">
+             <source src="images/glowingbgcopy.mp4" type="video/mp4">
+        </video>
+    </div>
+    <nav>
+        <div class="menu-toggle">
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+        </div>
+        <ul>
+            <li id="nav1"><a href="index.html">AdarnaSite</a></li>
+            <li id="nav2"><a href="hobbies.html">Hobbies</a></li>
+            <li id="nav3"><a href="contacts.html">Socials</a></li>
+            <li id="nav4"><a href="gallery.html">Gallery</a></li>
+        </ul>
+    </nav>
+    <div class="full-img" id="fullImgBox">
+        <img src="images/image1.jpg" id="fullImg" alt="img">
+        <span onclick="closeFullImg()">X</span>
+    </div>
+    <div class="img-gallery">
+        <img src="images/image1.jpg"  onclick="openFullImg(this.src)" alt="img1">
+        <img src="images/image2.jpg"  onclick="openFullImg(this.src)" alt="img2">
+        <img src="images/image3.jpg"  onclick="openFullImg(this.src)" alt="img3">
+        <img src="images/image4.jpg"  onclick="openFullImg(this.src)" alt="img4">
+        <img src="images/image5.jpg"  onclick="openFullImg(this.src)" alt="img5">
+        <img src="images/image6.jpg"  onclick="openFullImg(this.src)" alt="img6">
+        <img src="images/image7.jpg"  onclick="openFullImg(this.src)" alt="img7">
+        <img src="images/image8.jpg"  onclick="openFullImg(this.src)" alt="img8">
+        <img src="images/image9.jpg"  onclick="openFullImg(this.src)" alt="img9">
+        <img src="images/image10.jpg" onclick="openFullImg(this.src)" alt="img10">
+        <img src="images/image11.jpg" onclick="openFullImg(this.src)" alt="img11">
+        <img src="images/image12.jpg" onclick="openFullImg(this.src)" alt="img12">
+    </div>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            var mobileMenu = document.querySelector('nav ul');
+            var menuToggle = document.querySelector('.menu-toggle');
+
+            menuToggle.addEventListener('click', function() {
+                mobileMenu.classList.toggle('show');
+            });
+
+            // Close the mobile menu when a link is clicked
+            mobileMenu.addEventListener('click', function() {
+                mobileMenu.classList.remove('show');
+            });
+        });
+
+        var fullImgBox  = document.getElementById("fullImgBox");
+        var fullImg   = document.getElementById("fullImg");
+
+        function openFullImg(pic){
+            fullImgBox.style.display = "flex";
+            fullImg.src = pic;
+        }
+
+        function closeFullImg(){
+            fullImgBox.style.display = "none";
+
+        }
+
+
+    </script>
+</body>
+</html>

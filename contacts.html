@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AdarnaSite</title>
+    <link
+    href="https://cdn.jsdelivr.net/npm/remixicon@4.1.0/fonts/remixicon.css"
+    rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@200..800&family=Instrument+Serif:ital@0;1&family=Lemon&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Lemon&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">  
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Dosis:wght@200..800&family=Instrument+Serif:ital@0;1&family=Lemon&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="images/logo.svg">
+</head>
+<body>
+    <div class="hero">
+        <video autoplay loop muted class="back-video">
+             <source src="images/glowingbgcopy.mp4" type="video/mp4">
+        </video>
+    </div>
+    <nav>
+        <div class="menu-toggle">
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+        </div>
+        <ul class="show">
+            <li id="nav1"><a href="index.html">AdarnaSite</a></li>
+            <li id="nav2"><a href="hobbies.html">Hobbies</a></li>
+            <li id="nav3"><a href="contacts.html">Socials</a></li>
+            <li id="nav4"><a href="gallery.html">Gallery</a></li>
+        </ul>
+    </nav>
+    <div class="container">
+        <div class="card__container">
+           <article class="card__article">
+              <div class="card__scale-1"></div>
+              <div class="card__scale-2"></div>
+
+              <div class="card__shape-1">
+                 <div class="card__shape-2"></div>
+                 <div class="card__shape-3">
+                    <i class="ri-facebook-fill card__icon"></i>
+                 </div>
+              </div>
+  
+              <div class="card__data">
+                 <h2 class="card__title">Facebook</h2>
+                 
+                 <p class="card__description">
+                    Visit and add me as a friend!
+                 </p>
+
+                 <a href="https://www.facebook.com/francisadrian.adarna/" class="card__button">
+                    Double Tap !!
+                 </a>
+              </div>
+           </article>
+  
+           <article class="card__article card__orange">
+              <div class="card__scale-1"></div>
+              <div class="card__scale-2"></div>
+
+              <div class="card__shape-1">
+                 <div class="card__shape-2"></div>
+                 <div class="card__shape-3">
+                    <i class="ri-instagram-fill card__icon"></i>
+                 </div>
+              </div>
+  
+              <div class="card__data">
+                 <h2 class="card__title">Instagram</h2>
+
+                 <p class="card__description">
+                    Follow and look at my posts!
+                 </p>
+
+                 <a href="https://www.instagram.com/adriannnadarna/" class="card__button">
+                    Double Tap !!
+                 </a>
+              </div>
+           </article>
+  
+           <article class="card__article card__green">
+              <div class="card__scale-1"></div>
+              <div class="card__scale-2"></div>
+
+              <div class="card__shape-1">
+                 <div class="card__shape-2"></div>
+                 <div class="card__shape-3">
+                    <i class="ri-spotify-fill card__icon"></i>
+                 </div>
+              </div>
+  
+              <div class="card__data">
+                 <h2 class="card__title">Spotify</h2>
+
+                 <p class="card__description">
+                    Come listen with me!
+                 </p>
+
+                 <a href="https://open.spotify.com/user/hjazhqm4d3gozme42608rnvnm?si=0828ed1b72f44568" class="card__button">
+                    Double Tap !!
+                 </a>
+              </div>
+           </article>
+
+           <article class="card__article card__red">
+            <div class="card__scale-1"></div>
+            <div class="card__scale-2"></div>
+
+            <div class="card__shape-1">
+               <div class="card__shape-2"></div>
+               <div class="card__shape-3">
+                  <i class="ri-tiktok-line card__icon"></i>
+               </div>
+            </div>
+
+            <div class="card__data">
+               <h2 class="card__title">TikTok</h2>
+
+               <p class="card__description">
+                  Follow me and I'll send you some funny tiktoks!
+               </p>
+
+               <a href="https://www.tiktok.com/@chairtable01?_t=8jCFzsOsXFS&_r=1" class="card__button">
+                  Double Tap !!
+               </a>
+            </div>
+         </article>
+        </div>
+     </div>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            var mobileMenu = document.querySelector('nav ul');
+            var menuToggle = document.querySelector('.menu-toggle');
+
+            menuToggle.addEventListener('click', function() {
+                mobileMenu.classList.toggle('show');
+            });
+
+            
+            mobileMenu.addEventListener('click', function() {
+                mobileMenu.classList.remove('show');
+            });
+        });
+    </script>
+</body>
+</html>
